@@ -1,0 +1,30 @@
+package phase;
+interface Common {
+	void display();
+}
+
+class ClassA implements Common {
+	public void display() {
+		System.out.println("ClassA");
+		}
+}
+
+
+class ClassB implements Common {
+	public void display() {
+		System.out.println("ClassB");
+		}
+}
+
+class DiamondProblemSolver extends ClassA implements Common {
+}
+
+
+public class DiamondProblem {
+	public static void main(String[] args) {
+		DiamondProblemSolver solver = new DiamondProblemSolver();
+		solver.display();
+		}
+}
+
+
