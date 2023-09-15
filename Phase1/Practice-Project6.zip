@@ -1,0 +1,17 @@
+package phase;
+
+public class ExceptionHandling {
+	public static void main(String[] args) {
+		try {
+			int n[] = {1, 2, 3};
+			System.out.println("Accessing element at index 4: " + n[4]);
+			}
+		catch (ArrayIndexOutOfBoundsException aie) {
+			System.out.println("An ArrayIndexOutOfBoundsException occurred");
+			}
+		finally {
+			System.out.println("This block always gets executed");
+			}
+		}
+}
+
