@@ -1,0 +1,26 @@
+package phase;
+
+import java.util.Arrays;
+
+public class OrderStatistics {
+	public static int kthSmallest(int arr[],int k) {
+		if (k>0 && k<=arr.length) {
+			Arrays.sort(arr);
+			return arr[k-1];
+			}
+		return -1;
+		}
+	
+	public static void main(String[] args) {
+		int array[]={12,3,1,15,6,10,9};
+		int k=4;
+		int kthSmallestElement=kthSmallest(array,k);
+		if (kthSmallestElement!=-1) {
+			System.out.println("The " + k + "th smallest element is " +kthSmallestElement);
+			} 
+		else {
+				System.out.println("Invalid value of k");
+			}
+	}
+}
+
