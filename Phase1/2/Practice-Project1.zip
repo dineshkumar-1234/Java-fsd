@@ -1,0 +1,30 @@
+package phase;
+
+public class RotateArray {
+	public static void main(String[] args) {
+		int a[]={1,2,3,4,5,6,7};
+		int ToRotate=5;
+		rotateRight(a,ToRotate);
+		printArray(a);
+		}
+	
+	public static void rotateRight(int a[],int position) {
+		int n=a.length;
+		position=position%n;
+		
+		int temp[]=new int[n];
+		for(int i=0;i<n;i++) {
+			temp[(i+position)%n]=a[i];
+			}
+		
+		for(int i = 0; i < n; i++) {
+			a[i] = temp[i];
+			}
+		}
+	
+	public static void printArray(int a[]) {
+		for(int i:a) {
+			System.out.print(i+" ");
+			}
+		}
+}
