@@ -1,0 +1,29 @@
+package dataStructure;
+
+import java.util.Scanner;
+public class LinearSearch{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int a[] = {10, 25, 6, 42, 8, 15};
+		
+		System.out.print("Enter the element to search: ");
+		int searchValue=sc.nextInt();
+		int i=linearSearch(a,searchValue);
+		
+		if (i!=-1){
+			System.out.println("Element " + searchValue + " found at index " + i);
+			}
+		else{
+			System.out.println("Element " + searchValue + " not found in the array");
+			}
+	}
+	
+	public static int linearSearch(int a[], int searchValue) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == searchValue) {
+				return i;
+				}
+			}
+		return -1;
+		}
+}
