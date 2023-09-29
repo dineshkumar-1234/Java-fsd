@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Request Form</title>
+</head>
+<body>
+	<h1>Send GET and POST Requests</h1>
+
+<form action="GetServlet" method="get">
+	<label for="getParam">Enter a parameter for GET request:</label>
+	<input type="text" id="getParam" name="param">
+	<input type="submit" value="Send GET Request">
+</form>
+
+<form action="PostServlet" method="post">
+	<label for="postParam">Enter a parameter for POST request:</label>
+	<input type="text" id="postParam" name="param">
+	<input type="submit" value="Send POST Request">
+</form>
+</body>
+</html>
