@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet
 
-public class JDBCServlet extends HttpServlet {
+public class JDBCSetup extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -20,7 +20,7 @@ public class JDBCServlet extends HttpServlet {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String jdbcUrl = "jdbc:mysql://localhost:3306/ecommerce";
+			String jdbcUrl = "jdbc:mysql://localhost:3306/eshop";
 			String username = "root";
 			String password = "q1w2e3r4t5y6u7!";
 			connection = DriverManager.getConnection(jdbcUrl, username, password);
