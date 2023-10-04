@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Database Operations</title>
+</head>
+<body>
+<h1>Database Operations</h1>
+<form action="DataServlet" method="post">
+	<h2>Insert Data</h2>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required>
+	<label for="value">Value:</label>
+	<input type="text" id="value" name="value" required>
+	<input type="submit" name="insert" value="Insert">
+	
+	<h2>Update Data</h2>
+	<label for="updateId">Record ID to Update:</label>
+	<input type="text" id="updateId" name="updateId" required>
+	<label for="newValue">New Value:</label>
+	<input type="text" id="newValue" name="newValue" required>
+	<input type="submit" name="update" value="Update">
+	
+	<h2>Delete Data</h2>
+	<label for="deleteId">Record ID to Delete:</label>
+	<input type="text" id="deleteId" name="deleteId" required>
+	<input type="submit" name="delete" value="Delete">
+</form>
+</body>
+</html>
