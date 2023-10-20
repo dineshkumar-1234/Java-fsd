@@ -22,9 +22,7 @@ public class MainController {
     @RequestMapping("/")
      @ResponseBody
      public String index() {
-          
-
-       return “This is running under SSL”;
+    	return "This is running under SSL";
      }
     
 }
