@@ -1,0 +1,16 @@
+var x=(2*3)+5;
+var y=3*4;
+var result=myFunction(2,3);
+console.log(result);
+	
+function myFunction(n1,n2) {
+    var a=n1*n2;
+    var b=n1+n2;
+	return(a+b);
+}
+console.log(myFunction(3,4));
+
+function toCelcius(f){
+    return (5/9)*(f-32);
+}
+console.log("The temperature is "+ toCelcius(60));
